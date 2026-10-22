@@ -1,33 +1,63 @@
-The matrices in the exercise are:
+# Exercise 1. Matrix Size and Entries
 
-\\[ A=\begin{pmatrix} 2 & -1 & 3\\\ 0 & 4 & 8\\\ 5 & \end{pmatrix} \\]
+## Question
 
-\\[ B=\begin{pmatrix} 1 & 8 & 0\\\ -2 & 8 & 3\\\ 4 & 8 & 1 \end{pmatrix} \\]
+Given
 
-The formatting of matrix \\(A\\) is unclear in the screenshot, so I’ll answer based on the visible entries as far as possible.
+\[
+A=\begin{pmatrix}
+2 & -1 & 3\\
+0 & 4 & 5
+\end{pmatrix},
+\qquad
+B=\begin{pmatrix}
+1 & 8\\
+-2 & 3\\
+4 & 1
+\end{pmatrix}.
+\]
 
-## 1. State the sizes of matrices \\(A\\) and \\(B\\)
+1. State the sizes of matrices \(A\) and \(B\).
+2. Read off the entries \(a_{12}\), \(a_{23}\), \(b_{21}\), and \(b_{32}\).
+3. Write the second row of \(A\) and the first column of \(B\) as vectors.
 
-- Matrix \\(A\\): the screenshot appears to show 3 rows and 3 columns, so \\(3\times3\\), if the final row is intended to have three entries.
-- Matrix \\(B\\): \\(3\times3\\).
+## Solution
 
-## 2. Read off the entries
+### 1. Matrix sizes
 
-Remember: \\(a\_{ij}\\) means row \\(i\\), column \\(j\\).
+The size of a matrix is written as
 
-- \\(a\_{12}=-1\\)
-- \\(a\_{23}=8\\)
-- \\(b\_{21}= -2\\)
-- \\(b\_{32}=8\\)
+\[
+\text{number of rows}\times\text{number of columns}.
+\]
 
-## 3. Write the second row of \\(A\\) and the first column of \\(B\\) as vectors
+Matrix \(A\) has 2 rows and 3 columns, so its size is \(2\times3\).
 
-The second row of \\(A\\) is:
+Matrix \(B\) has 3 rows and 2 columns, so its size is \(3\times2\).
 
-\\[ \boxed{\begin{pmatrix}0&4&8\end{pmatrix}} \\]
+### 2. Matrix entries
 
-The first column of \\(B\\) is:
+In \(a_{ij}\) or \(b_{ij}\), the first index identifies the row and the second index identifies the column.
 
-\\[ \boxed{\begin{pmatrix}1\\\\-2\\\4\end{pmatrix}} \\]
+- \(a_{12}=-1\): row 1, column 2 of \(A\).
+- \(a_{23}=5\): row 2, column 3 of \(A\).
+- \(b_{21}=-2\): row 2, column 1 of \(B\).
+- \(b_{32}=1\): row 3, column 2 of \(B\).
 
-Important: The matrix \\(A\\) appears malformed in the screenshot because its last row seems to contain only \\(5\\). If you send the correctly formatted matrix \\(A\\), I can confirm its size.
+### 3. Row and column vectors
+
+The second row of \(A\) contains the entries \(0\), \(4\), and \(5\). Written as a row vector, it is
+
+\[
+\begin{pmatrix}0 & 4 & 5\end{pmatrix}.
+\]
+
+The first column of \(B\) contains the entries \(1\), \(-2\), and \(4\). Written as a column vector, it is
+
+\[
+\begin{pmatrix}
+1\\
+-2\\
+4
+\end{pmatrix}.
+\]
